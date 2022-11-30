@@ -1,0 +1,22 @@
+{
+  "name": "@buildery/core.setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "private": false,
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "publishConfig": {
+    "cache": "cache/.npm",
+    "access": "public"
+  },
+  "author": "Uladzimir Karpau",
+  "license": "UNLICENSED",
+  "rootDir": "src",
+  "dependencies": {
+    "dockerode": "^3.3.4",
+    "typescript": "^4.9.3"
+  }
+}
