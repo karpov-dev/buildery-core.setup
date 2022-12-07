@@ -1,5 +1,5 @@
-import {IMicroservice} from "../../interfaces/IMicroservice";
-import {SourceCode} from "../source/SourceCode";
+import {IMicroservice} from "../../interfaces";
+import {SourceCode} from "../source";
 import {Template} from "./Template";
 import {TemplateManager} from "./TemplateManager";
 import {ImageBuildOptions} from "dockerode";

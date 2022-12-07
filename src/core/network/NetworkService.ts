@@ -1,4 +1,4 @@
-import {IWorkspace} from "../../interfaces/IWorkspace";
+import {IWorkspace} from "../../interfaces";
 import {NetworkManager} from "./NetworkManager";
 import {Network} from "./Network";
 import Dockerode, {NetworkCreateOptions} from "dockerode";

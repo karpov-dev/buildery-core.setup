@@ -5,7 +5,7 @@ import * as fs from "fs";
 //TODO: Мне кажется, что можно напрямую из гита достать исходный код
 
 const SOURCE_DIR = `microservices`;
-const TAR_EXTENSION = '.tar';
+const TAR_EXTENSION = 'tar';
 
 export class SourceCode {
 

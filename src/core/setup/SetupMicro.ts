@@ -1,11 +1,7 @@
-import {IWorkspace} from "../../interfaces/IWorkspace";
-import {IMicroservice} from "../../interfaces/IMicroservice";
-import {TemplateService} from "../template/TemplateService";
-import {TemplateManager} from "../template/TemplateManager";
-import {NetworkService} from "../network/NetworkService";
-import {NetworkManager} from "../network/NetworkManager";
-import {MicroManager} from "../micro/MicroManager";
-import {MicroService} from "../micro/MicroService";
+import {IWorkspace, IMicroservice} from "../../interfaces";
+import {TemplateService, TemplateManager} from "../template";
+import {NetworkService, NetworkManager} from "../network";
+import {MicroService, MicroManager} from "../micro";
 import {Container, Network} from "dockerode";
 
 export class SetupMicro {

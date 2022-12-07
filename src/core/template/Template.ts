@@ -1,7 +1,7 @@
 import {ImageBuildOptions} from "dockerode";
 import {docker} from "../../constants";
-import {SourceCode} from "../source/SourceCode";
-import {IMicroservice} from "../../interfaces/IMicroservice";
+import {SourceCode} from "../source";
+import {IMicroservice} from "../../interfaces";
 
 export class Template {
 

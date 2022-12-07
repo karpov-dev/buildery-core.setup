@@ -1,5 +1,4 @@
-import {IWorkspace} from "../../interfaces/IWorkspace";
-import {IMicroservice} from "../../interfaces/IMicroservice";
+import {IWorkspace, IMicroservice} from "../../interfaces";
 import {MicroManager} from "./MicroManager";
 import {Micro} from "./Micro";
 import {ContainerCreateOptions} from "dockerode";

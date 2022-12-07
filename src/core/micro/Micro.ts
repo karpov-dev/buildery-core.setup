@@ -1,5 +1,4 @@
-import {IWorkspace} from "../../interfaces/IWorkspace";
-import {IMicroservice} from "../../interfaces/IMicroservice";
+import {IWorkspace, IMicroservice} from "../../interfaces";
 import {docker} from "../../constants";
 import {ContainerCreateOptions} from "dockerode";
 

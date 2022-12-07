@@ -1,8 +1,7 @@
-import {microservices} from "../../constants/microservices.constants";
+import {microservices} from "../../constants";
 import {SetupMicro} from "./SetupMicro";
-import {IWorkspace} from "../../interfaces/IWorkspace";
-import {NetworkService} from "../network/NetworkService";
-import {NetworkManager} from "../network/NetworkManager";
+import {IWorkspace} from "../../interfaces";
+import {NetworkService, NetworkManager} from "../network";
 
 export class SetupService {
 
