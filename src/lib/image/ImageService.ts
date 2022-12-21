@@ -3,7 +3,7 @@ import {IMicroservice} from "../../types";
 import {ImageManager} from "./ImageManager";
 import {SourceCodeService} from "../source-code";
 import {docker} from "../../config";
-import {EmptyParamError} from "../../error/EmptyParamError";
+import {EmptyParamError} from "../../errors";
 
 export class ImageService {
 

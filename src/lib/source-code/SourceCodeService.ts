@@ -2,7 +2,7 @@ import simpleGit from "simple-git";
 import {tar} from "zip-a-folder";
 import * as fs from "fs";
 import {ISourceCodeItem} from "../../types";
-import {EmptyParamError} from "../../error/EmptyParamError";
+import {EmptyParamError} from "../../errors";
 
 //TODO: Мне кажется, что можно напрямую из гита достать исходный код
 

@@ -2,7 +2,7 @@ import {NetworkManager} from "./NetworkManager";
 import Dockerode, {NetworkCreateOptions} from "dockerode";
 import {IWorkspace} from "../../types";
 import {docker} from "../../config";
-import {EmptyParamError} from "../../error/EmptyParamError";
+import {EmptyParamError} from "../../errors";
 
 export class NetworkService {
 
