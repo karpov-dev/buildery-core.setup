@@ -1,11 +1,8 @@
-import {AbstractSetupContainer} from "./AbstractSetupContainer";
 import {ContainerManager, ContainerService} from "../container";
 import {NetworkManager, NetworkService} from "../network";
-import {Container} from "dockerode";
+import {AbstractSetupContainer} from "./AbstractSetupContainer";
 
 export class SetupMicroservice extends AbstractSetupContainer {
-
-  protected container: Container = null;
 
   async setup() {
     await this.createContainer();

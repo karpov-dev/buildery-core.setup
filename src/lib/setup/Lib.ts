@@ -1,9 +1,13 @@
-import {commonMicroservices} from "../../config";
+import {commonMicroservices, docker} from "../../config";
 import {ISourceCodeItem} from "../../types";
 import {SourceCodeService} from "../source-code";
 import {ImageService} from "../image";
 
-export class SetupLib {
+export class Lib {
+
+  public static global = {
+    network: null
+  };
 
   public static async setup() {
     await this.updateSourceCode();
@@ -25,7 +29,7 @@ export class SetupLib {
   }
 
   private static async createGlobalNetwork() {
-
+    this.global.network = docker.createNetwork({Name: 'global-network'});
   }
 
   private static async runGlobalRouter() {

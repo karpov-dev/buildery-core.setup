@@ -24,8 +24,7 @@ export class NetworkService {
 
   public static getNetworkOptions(workspace: IWorkspace): NetworkCreateOptions {
     return {
-      Name: workspace.domain,
-      Driver: 'bridge'
+      Name: workspace.domain
     }
   }
 

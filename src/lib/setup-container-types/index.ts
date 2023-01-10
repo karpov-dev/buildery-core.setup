@@ -1,3 +1,4 @@
+export * from './AbstractSetupInstance';
 export * from './AbstractSetupContainer';
 export * from './SetupMicroservice';
 export * from './SetupLocalRouter';

@@ -22,14 +22,14 @@ export class ContainerManager {
 
   public static async removeById(id: string): Promise<any> {
     const container = this.getById(id);
-    await container.stop();
+    await container?.stop();
 
     return await container?.remove();
   }
 
   public static async removeByName(name: string): Promise<any> {
     const container = await this.getByName(name);
-    await container.stop();
+    await container?.stop();
 
     return await container?.remove();
   }

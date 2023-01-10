@@ -1,18 +1,12 @@
-import {IMicroservice, IWorkspace} from "../../types";
+import {AbstractSetupInstance} from "./AbstractSetupInstance";
+import {Container} from "dockerode";
 
-export abstract class AbstractSetupContainer {
+export abstract class AbstractSetupContainer extends AbstractSetupInstance {
 
-  protected workspace: IWorkspace = null;
+  protected container: Container = null;
 
-  protected microservice: IMicroservice = null;
+  public abstract createContainer();
 
-  public constructor(workspace: IWorkspace, microservice: IMicroservice) {
-    this.workspace = workspace;
-    this.microservice = microservice;
-  }
-
-  public abstract setup();
-
-  public abstract afterCallback();
+  public abstract runContainer();
 
 }

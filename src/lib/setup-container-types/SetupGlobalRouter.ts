@@ -1,6 +1,6 @@
-import {AbstractSetupContainer} from "./AbstractSetupContainer";
+import {AbstractSetupInstance} from "./AbstractSetupInstance";
 
-export class SetupGlobalRouter extends AbstractSetupContainer {
+export class SetupGlobalRouter extends AbstractSetupInstance {
 
   setup() {}
 

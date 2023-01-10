@@ -6,5 +6,5 @@ a().then(() => console.log('Success'))
 async function a() {
   const setupService = new SetupService();
   await setupService.init();
-  await setupService.setup({domain: 'my-workspace'});
+  await setupService.setup({domain: 'test'});
 }

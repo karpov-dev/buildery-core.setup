@@ -1,5 +1,5 @@
 import {commonMicroservices} from "../../config";
-import {AbstractSetupContainer, SetupMicroservice} from "../setup-container-types";
+import {AbstractSetupInstance, SetupMicroservice} from "../setup-container-types";
 import {IWorkspace} from "../../types";
 import {NetworkManager, NetworkService} from "../network";
 import {ContainerManager, ContainerService} from "../container";
@@ -28,5 +28,5 @@ export const createWorkspaceNetwork = async (workspace: IWorkspace) => {
 export const getMicroservicesSetups = (workspace: IWorkspace) => {
   return commonMicroservices.map(commonMicroservice => {
     return new SetupMicroservice(workspace, commonMicroservice)
-  }) as Array<AbstractSetupContainer>;
+  }) as Array<AbstractSetupInstance>;
 }

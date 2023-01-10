@@ -1,5 +1,5 @@
 import {IWorkspace} from "../../types";
-import {AbstractSetupContainer} from "../setup-container-types";
+import {AbstractSetupInstance} from "../setup-container-types";
 import {
   createWorkspaceNetwork,
   getMicroservicesSetups,
@@ -21,11 +21,11 @@ export class SetupWorkspace {
     await createWorkspaceNetwork(workspace);
   }
 
-  private static async setup(setups: Array<AbstractSetupContainer>) {
+  private static async setup(setups: Array<AbstractSetupInstance>) {
     await Promise.all(setups.map(setup => setup.setup()));
   }
 
-  private static async afterAll(setups: Array<AbstractSetupContainer>) {
+  private static async afterAll(setups: Array<AbstractSetupInstance>) {
     await Promise.all(setups.map(setup => setup.afterCallback()));
   }
 
